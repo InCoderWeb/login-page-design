@@ -1,0 +1,119 @@
+/* --------------------- Created By InCoder --------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+	max-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.login {
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 14px 4px;
+}
+
+.login .left{
+    width: 100%;
+}
+
+.login .left h1{
+    font-size: 2.5rem;
+}
+
+.login .left p{
+    color: #4e575d;
+}
+
+.socialBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    outline: none;
+    height: 2.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: transparent;
+    margin-top: .8rem!important;
+    border: 1px solid #4e575d3d;
+    transition: .2s  ease-in-out all;
+}
+
+.googleBtn:hover{
+    background: #fbbc05;
+    border-color: #fbbc05;
+}
+
+.facebookBtn:hover{
+    color: #fff;
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.login .right{
+    width: 40vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url("./images/right.jpeg") center center / cover no-repeat;
+}
+
+.login .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formGroup{
+    margin-bottom: 1rem;
+}
+
+input{
+    height: 2.5rem;
+    border-radius: .4rem;
+    border: 1px solid #4e575d80;
+    padding: 0rem .5rem!important;
+    transition: .2s ease-in-out all;
+}
+
+input:focus-within{
+    border-radius: 20px;
+    border: 1px solid #7b6fe5;
+    outline: 2px solid #7b6fe5;
+}
+
+label{
+    color: #4e575d;
+    margin-bottom: .3rem;
+}
+
+.forgetPass:hover{
+    color: #7b6fe5;
+}
+
+.loginBtn{
+    color: #fff;
+    background: #7b6fe5;
+}
+
+@media (min-width: 768px) {
+    .login{
+        max-height: 85vh;
+    }
+}
